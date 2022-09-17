@@ -19,3 +19,19 @@ h2 {
   margin-top: 0;
   margin-bottom: 20px;
 }
+
+button {
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 200px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  color: white;
+}
+
+#increment-btn {
+  background-color: darkred;
+}
