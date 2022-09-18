@@ -10,7 +10,7 @@ function increment() {
 
 function save() {
   // 2. create a variable that contains both the count and the dash separator, i.e. "12 - "
-  let _save = ' ' + count + ' -';
+  let _save = ' ' + count + ' - ';
   // 3. render the variable in the saveEl using innerText
   saveEl.innerText += _save;
   // NB: make sure to not delete the existing content of the paragraph
