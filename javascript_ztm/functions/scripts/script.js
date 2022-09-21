@@ -26,34 +26,31 @@ farewell();
 let age = prompt('what is your age');
 let messageEl = document.getElementById('message-el');
 let driverAgeEl = document.getElementById('driverAge-el');
-function checkDriverAge2(age) {
+function checkDriverAge2() {
   let message = function () {
     if (Number(age) < 18) {
-      messageEl.innerText = 'you are not old enough';
-      console.log(age, messageEl.innerText);
-      return messageEl;
+      console.log(age);
+      let res = (messageEl.innerText = 'you are not old enough');
+      return res;
     } else if (Number(age) > 18) {
-      messageEl.innerText = 'Power on and keep riding you badass';
-      console.log(age, messageEl.innerText);
-      return messageEl;
+      console.log(age);
+      let res = (messageEl.innerText = 'Power on and keep riding you badass');
+      return res;
     } else if (Number(age) === 18) {
-      messageEl.innerText = 'congrats on your years of riding';
-      console.log(age, messageEl.innerText);
-      return messageEl;
+      console.log(age);
+      let res = (messageEl.innerText = 'congrats on your years of riding');
+      return res;
     }
   };
 
   if (Number(age) < 18) {
     driverAgeEl.innerText = age;
-    console.log(age, driverAgeEl.innerText);
     return driverAgeEl + message();
   } else if (Number(age) > 18) {
     driverAgeEl.innerText = age;
-    console.log(age, driverAgeEl.innerText);
     return driverAgeEl + message();
   } else if (Number(age) === 18) {
     driverAgeEl.innerText = age;
-    console.log(age, driverAgeEl.innerText);
     return driverAgeEl + message();
   }
 }
