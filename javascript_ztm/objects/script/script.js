@@ -22,7 +22,7 @@ isMarriedEl.innerText = 'is married: ' + user.isMarried;
 user.favoriteFood = 'Cioppino';
 foodEl.innerText = user.favoriteFood;
 
-// facebook lite
+// ***************************** facebook lite *****************************
 let database = [
   {
     username: 'Anthony',
