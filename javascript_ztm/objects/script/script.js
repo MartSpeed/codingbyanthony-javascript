@@ -5,6 +5,7 @@ let nameEl = document.getElementById('name-el');
 let ageEl = document.getElementById('age-el');
 let hobbyEl = document.getElementById('hobby-el');
 let isMarriedEl = document.getElementById('isMarried-el');
+let foodEl = document.getElementById('food-el');
 
 let user = {
   name: 'Anthony',
@@ -17,3 +18,6 @@ nameEl.innerText = 'name: ' + user.name;
 ageEl.innerText = 'age: ' + user.age;
 hobbyEl.innerText = 'hobby: ' + user.hobby;
 isMarriedEl.innerText = 'is married: ' + user.isMarried;
+
+user.favoriteFood = 'Cioppino';
+foodEl.innerText = user.favoriteFood;
