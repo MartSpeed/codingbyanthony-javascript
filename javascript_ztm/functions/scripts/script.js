@@ -1,7 +1,7 @@
-let greeting = document.getElementById('greeting-el');
+let greetingEl = document.getElementById('greeting-el');
 let message = 'grand rising';
 function sayHello() {
-  greeting.innerText = message;
+  greetingEl.innerText = message;
 }
 sayHello();
 
