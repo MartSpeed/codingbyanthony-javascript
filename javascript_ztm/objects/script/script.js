@@ -21,3 +21,35 @@ isMarriedEl.innerText = 'is married: ' + user.isMarried;
 
 user.favoriteFood = 'Cioppino';
 foodEl.innerText = user.favoriteFood;
+
+// facebook lite
+let database = [
+  {
+    username: 'Anthony',
+    password: 'supersecret',
+  },
+];
+
+let newsfeed = [
+  {
+    username: 'bobby',
+    timeline: 'so tired from all the learning',
+  },
+  {
+    username: 'sally',
+    timeline: 'javascript is so cool',
+  },
+];
+
+let userNamePrompt = prompt('Whats your username');
+let passwordPrompt = prompt('whats your password');
+
+function signIn(username, password) {
+  if (username === database[0].username && password === database[0].password) {
+    console.log(newsfeed[0].username + ' says: ' + newsfeed[0].timeline);
+    console.log(newsfeed[1].username + ' says: ' + newsfeed[1].timeline);
+  } else {
+    alert('sorry, wrong username and password');
+  }
+}
+signIn(userNamePrompt, passwordPrompt);
