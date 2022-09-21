@@ -1,0 +1,10 @@
+body {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+button {
+  width: 150px;
+  background-color: rgba(125, 200, 80, 0.4);
+  text-transform: uppercase;
+  border-radius: 5px;
+}
