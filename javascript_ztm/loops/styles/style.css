@@ -10,3 +10,6 @@ p {
   color: orange;
   font-size: 3rem;
 }
+#error-el {
+  color: red;
+}
