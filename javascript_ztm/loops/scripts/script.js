@@ -17,6 +17,20 @@ let todos = [
 ];
 
 for (let i = 0; i < todos.length; i++) {
-  forLoopEl.innerText += `${todos[i]}\n`;
-  console.log(todos[i]);
+  forLoopEl.innerText += `${todos[i]}!\n`;
+}
+
+// while loops
+let whileLoopEl = document.getElementById('whileLoop-el');
+let counterOne = 0;
+while (counterOne < 10) {
+  whileLoopEl.innerText += `[${counterOne}],`;
+  counterOne++;
+}
+
+// while loop in reverse
+counterOne = 10;
+while (counterOne > 0) {
+  whileLoopEl.innerText += '\n' + counterOne + '!';
+  counterOne--;
 }
