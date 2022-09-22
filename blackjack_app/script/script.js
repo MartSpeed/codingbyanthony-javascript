@@ -35,4 +35,5 @@ if (sum <= 20) {
   isAlive = false;
 }
 
-// cash out!
+// create a startGame() function. move the conditional
+// inside the body of the function
