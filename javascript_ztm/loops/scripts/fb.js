@@ -35,12 +35,36 @@ let sallyEl = document.getElementById('sally-el');
 let mitchEl = document.getElementById('mitch-el');
 let errorEl = document.getElementById('error-el');
 
-function signIn(username, password) {
-  if (username === database[0].username && password === database[0].password) {
-    bobbyEl.innerText = newsfeed[0].username + ' says: ' + newsfeed[0].timeline;
-    sallyEl.innerText = newsfeed[1].username + ' says: ' + newsfeed[1].timeline;
-  } else {
-    errorEl.innerText = 'sorry, wrong username and password';
+// isUserValid
+function isUserValid(username, password) {
+  for (let i = 0; i < database.length; ++i) {
+    if (
+      database[i].username === username &&
+      database[i].password === password
+    ) {
+      return true;
+    }
   }
+  return false;
 }
+
+function signIn(username, password) {
+  console.log(isUserValid(username, password));
+  // bobbyEl.innerText =
+  //     newsfeed[0].username + ' says: ' + newsfeed[0].timeline;
+  //   sallyEl.innerText =
+  //     newsfeed[1].username + ' says: ' + newsfeed[1].timeline;
+  //   mitchEl.innerText =
+  //     newsfeed[2].username + ' says: ' + newsfeed[2].timeline;
+  // } else {
+  //   errorEl.innerText = 'sorry, wrong username and password';
+  // }
+}
+
+// if (username === database[0].username && password === database[0].password) {
+//   bobbyEl.innerText = newsfeed[0].username + ' says: ' + newsfeed[0].timeline;
+//   sallyEl.innerText = newsfeed[1].username + ' says: ' + newsfeed[1].timeline;
+// } else {
+//   errorEl.innerText = 'sorry, wrong username and password';
+// }
 signIn(userNamePrompt, passwordPrompt);
