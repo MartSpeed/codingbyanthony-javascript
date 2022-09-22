@@ -34,3 +34,13 @@ while (counterOne > 0) {
   whileLoopEl.innerText += '\n' + counterOne + '!';
   counterOne--;
 }
+
+// do while loop
+let doLoopEl = document.getElementById('doLoop-el');
+do {
+  doLoopEl.innerText += `${counterOne}< `;
+  counterOne++;
+} while (counterOne < 10);
+
+// for each loop method
+let forEachEl = document.getElementById('forEach-el');
