@@ -3,6 +3,14 @@ let database = [
     username: 'Anthony',
     password: 'supersecret',
   },
+  {
+    username: 'Flash',
+    password: '1234',
+  },
+  {
+    username: 'TheMainMan',
+    password: 'boomstick',
+  },
 ];
 
 let newsfeed = [
@@ -14,12 +22,17 @@ let newsfeed = [
     username: 'sally',
     timeline: 'javascript is so cool',
   },
+  {
+    username: 'mitch',
+    timeline: 'javascript is pretty cool',
+  },
 ];
 
 let userNamePrompt = prompt('Whats your username');
 let passwordPrompt = prompt('whats your password');
 let bobbyEl = document.getElementById('bobby-el');
 let sallyEl = document.getElementById('sally-el');
+let mitchEl = document.getElementById('mitch-el');
 let errorEl = document.getElementById('error-el');
 
 function signIn(username, password) {
