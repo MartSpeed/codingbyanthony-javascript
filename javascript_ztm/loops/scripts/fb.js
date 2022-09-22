@@ -57,11 +57,4 @@ function signIn(username, password) {
     errorEl.innerText = 'sorry, wrong username and password';
   }
 }
-
-// if (username === database[0].username && password === database[0].password) {
-//   bobbyEl.innerText = newsfeed[0].username + ' says: ' + newsfeed[0].timeline;
-//   sallyEl.innerText = newsfeed[1].username + ' says: ' + newsfeed[1].timeline;
-// } else {
-//   errorEl.innerText = 'sorry, wrong username and password';
-// }
 signIn(userNamePrompt, passwordPrompt);
