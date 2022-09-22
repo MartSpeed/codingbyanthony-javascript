@@ -28,8 +28,8 @@ let newsfeed = [
   },
 ];
 
-let userNamePrompt = prompt('Whats your username');
-let passwordPrompt = prompt('whats your password');
+const userNamePrompt = prompt('Whats your username');
+const passwordPrompt = prompt('whats your password');
 let bobbyEl = document.getElementById('bobby-el');
 let sallyEl = document.getElementById('sally-el');
 let mitchEl = document.getElementById('mitch-el');
