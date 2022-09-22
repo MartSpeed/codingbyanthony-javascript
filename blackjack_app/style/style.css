@@ -6,6 +6,9 @@ body {
 h1 {
   text-transform: capitalize;
 }
+#result-el {
+  color: blue;
+}
 h3 {
   color: green;
 }

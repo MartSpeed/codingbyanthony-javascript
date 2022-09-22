@@ -16,3 +16,18 @@ let secondCardEl = (document.getElementById(
 // 2. create a variable, sum, and set it to the sum of the two cards
 let sum = firstCard + secondCard;
 let sumEl = (document.getElementById('sum-el').innerText = `Sum: ${sum}`);
+
+let resultEl = document.getElementById('result-el');
+const results = [
+  'Do you want to draw a new card?',
+  "Woohoo!, You've got Blackjack!",
+  "You've busted, would you like to play again?",
+];
+// logic for blackjack
+if (sum < 21) {
+  resultEl.innerText = results[0];
+} else if (sum === 21) {
+  resultEl.innerText = results[1];
+} else {
+  resultEl.innerText = results[2];
+}
