@@ -16,6 +16,7 @@ let secondCardEl = (document.getElementById(
 // 2. create a variable, sum, and set it to the sum of the two cards
 let sum = firstCard + secondCard;
 let sumEl = (document.getElementById('sum-el').innerText = `Sum: ${sum}`);
+let hasBlackJack = false;
 
 let resultEl = document.getElementById('result-el');
 const results = [
@@ -24,10 +25,13 @@ const results = [
   "You've busted, would you like to play again?",
 ];
 // logic for blackjack
-if (sum < 21) {
+if (sum <= 20) {
   resultEl.innerText = results[0];
 } else if (sum === 21) {
   resultEl.innerText = results[1];
+  hasBlackJack = true;
 } else {
   resultEl.innerText = results[2];
 }
+
+// cash out!
