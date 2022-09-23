@@ -1,0 +1,25 @@
+html {
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+  text-align: center;
+}
+h1 {
+  text-transform: capitalize;
+}
+#greeting-el {
+  color: blue;
+}
+h4 {
+  color: green;
+}
+button {
+  text-transform: uppercase;
+  width: 150px;
+  background: orange;
+  border: 0, solid, orange;
+  border-radius: 5px;
+}
+p {
+  color: yellow;
+  font-size: 2rem;
+}
