@@ -52,7 +52,7 @@ function isUserValid(username, password) {
 }
 
 // button click
-function signIn(username, password) {
+function signIn() {
   // user prompt
   userPrompt = prompt('What is your username?');
   passPrompt = prompt('what is your password?');
