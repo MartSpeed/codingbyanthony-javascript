@@ -2,33 +2,26 @@
 let jsTestEl = (document.querySelector('#js-test-el').innerText =
   'javascript is running');
 
+// variable selector
 let firstCard = 11;
 let secondCard = 7;
-let firstCardEl = (document.querySelector('#firstCard-el').innerText =
-  firstCard + ', ');
-
-let secondCardEl = (document.querySelector('#secondCard-el').innerText =
-  secondCard);
-
 let sum = firstCard + secondCard;
-// let sumEl = (document.getElementById('sum-el').innerText = `Sum: ${sum}`);
-let sumEl = (document.querySelector('#sum-el').innerText = `Sum: ${sum}`);
 let hasBlackJack = false;
-// create a variable called isAlive and assign it to true
-// flip its value to false in the appropriate code block
 let isAlive = true;
-
+// query selector
+let cardsEl = document.querySelector('#cards-el');
+let sumEl = document.querySelector('#sum-el');
 let messageEl = document.querySelector('#message-el');
+// message array
 const message = [
   'Do you want to draw a new card?',
   "You've got Blackjack!",
   "You've busted, would you like to play again?",
 ];
 
-// create a startGame() function. move the conditional
-// inside the body of the function
 function startGame() {
-  // logic for blackjack
+  cardsEl.textContent = `Cards: ${firstCard} ${secondCard}`;
+  sumEl.textContent = `Sum: ${sum}`;
   if (sum <= 20) {
     return (messageEl.innerText = message[0]);
   } else if (sum === 21) {
