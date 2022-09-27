@@ -23,6 +23,11 @@ button {
   width: 150px;
   color: #016f32;
   background-color: goldenrod;
+  text-transform: uppercase;
+  padding: 5px 0;
+  font-weight: bold;
+  border: none;
+  border-radius: 2px;
 }
 /* style the button according to the provided design
 text color - #016f32

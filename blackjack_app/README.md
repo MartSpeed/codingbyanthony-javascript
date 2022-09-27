@@ -6,3 +6,4 @@
 4. add the isAlive variable
 5. add the message variable
 6. create the start button
+7. display the message
