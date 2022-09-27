@@ -47,7 +47,7 @@ function renderGame() {
 }
 
 function getRandomCard() {
-  return 5;
+  return Math.floor(Math.random() * 11);
 }
 
 function newCard() {
