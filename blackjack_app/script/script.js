@@ -18,9 +18,14 @@ const message = [
   "You've got Blackjack!",
   "You've busted, would you like to play again?",
 ];
+// card array
+let cards = [firstCard, secondCard];
 
 function startGame() {
-  cardsEl.textContent = `Cards: ${firstCard} ${secondCard}`;
+  renderGame();
+}
+function renderGame() {
+  cardsEl.textContent = `Cards: ${cards[0]} ${cards[1]}`;
   sumEl.textContent = `Sum: ${sum}`;
   if (sum <= 20) {
     return (messageEl.innerText = message[0]);
@@ -37,5 +42,5 @@ function newCard() {
   secondCard += 1;
   sum = firstCard + secondCard;
   cardsEl.textContent = `Cards: ${firstCard} ${secondCard}`;
-  startGame();
+  renderGame();
 }
