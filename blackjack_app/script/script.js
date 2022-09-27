@@ -35,5 +35,7 @@ function startGame() {
 
 function newCard() {
   secondCard += 1;
+  sum = firstCard + secondCard;
   cardsEl.textContent = `Cards: ${firstCard} ${secondCard}`;
+  startGame();
 }
