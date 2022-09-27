@@ -11,7 +11,7 @@ let secondCardEl = (document.getElementById(
   'secondCard-el'
 ).innerText = `second card: ${secondCard}`);
 
-let sum = firstCard + secondCard;
+let sum = firstCard + secondCard + 3;
 let sumEl = (document.getElementById('sum-el').innerText = `Sum: ${sum}`);
 let hasBlackJack = false;
 // create a variable called isAlive and assign it to true
@@ -24,16 +24,18 @@ const message = [
   "Woohoo!, You've got Blackjack!",
   "You've busted, would you like to play again?",
 ];
-// logic for blackjack
-if (sum <= 20) {
-  resultEl.innerText = message[0];
-} else if (sum === 21) {
-  resultEl.innerText = message[1];
-  hasBlackJack = true;
-} else {
-  resultEl.innerText = message[2];
-  isAlive = false;
-}
 
 // create a startGame() function. move the conditional
 // inside the body of the function
+function startGame() {
+  // logic for blackjack
+  if (sum <= 20) {
+    resultEl.innerText = message[0];
+  } else if (sum === 21) {
+    resultEl.innerText = message[1];
+    hasBlackJack = true;
+  } else {
+    resultEl.innerText = message[2];
+    isAlive = false;
+  }
+}

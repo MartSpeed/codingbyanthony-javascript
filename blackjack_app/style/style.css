@@ -14,12 +14,20 @@ h1 {
 }
 #result-el {
   font-style: italic;
-  color: blue;
+  color: white;
 }
 h3 {
-  color: green;
+  color: red;
+}
+button {
+  width: 150px;
+  color: #016f32;
+  background-color: goldenrod;
 }
 /* style the button according to the provided design
 text color - #016f32
 width - 150px
 background - goldenrod*/
+#message-el {
+  font-style: italic;
+}
