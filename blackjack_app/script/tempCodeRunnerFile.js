@@ -1,4 +1,8 @@
-delimiter = 0.3;
-for (let count = 10; count < 101; count += 1 / delimiter) {
-  console.log(count);
+message = [
+  'Do you want to draw a new card?',
+  "You've got Blackjack!",
+  "You've busted, would you like to play again?",
+];
+for (let i = 0; i < message.length; ++i) {
+  console.log(message[i]);
 }
