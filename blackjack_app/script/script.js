@@ -42,7 +42,7 @@ function newCard() {
   let card = 2;
   secondCard += 1;
   sum = firstCard + secondCard;
-  cardsEl.textContent = `Cards: ${firstCard} ${secondCard}`;
+  cardsEl.textContent = `Cards: ${cards[0]} ${cards[1]}`;
   cards.push(card);
   renderGame();
 }
