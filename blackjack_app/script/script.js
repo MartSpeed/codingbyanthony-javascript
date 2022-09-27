@@ -1,13 +1,13 @@
 // js test line
-let jsTestEl = (document.getElementById('js-test-el').innerText =
+let jsTestEl = (document.querySelector('#js-test-el').innerText =
   'javascript is running');
 
 let firstCard = 11;
 let secondCard = 7;
-let firstCardEl = (document.getElementById('firstCard-el').innerText =
+let firstCardEl = (document.querySelector('#firstCard-el').innerText =
   firstCard + ', ');
 
-let secondCardEl = (document.getElementById('secondCard-el').innerText =
+let secondCardEl = (document.querySelector('#secondCard-el').innerText =
   secondCard);
 
 let sum = firstCard + secondCard;
@@ -18,7 +18,7 @@ let hasBlackJack = false;
 // flip its value to false in the appropriate code block
 let isAlive = true;
 
-let messageEl = document.getElementById('message-el');
+let messageEl = document.querySelector('#message-el');
 const message = [
   'Do you want to draw a new card?',
   "You've got Blackjack!",
