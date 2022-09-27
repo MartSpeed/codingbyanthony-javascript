@@ -39,8 +39,10 @@ function renderGame() {
 }
 
 function newCard() {
+  let card = 2;
   secondCard += 1;
   sum = firstCard + secondCard;
   cardsEl.textContent = `Cards: ${firstCard} ${secondCard}`;
+  cards.push(card);
   renderGame();
 }
