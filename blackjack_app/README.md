@@ -7,3 +7,4 @@
 5. add the message variable
 6. create the start button
 7. display the message
+8. new card button

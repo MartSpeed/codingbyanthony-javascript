@@ -32,3 +32,8 @@ function startGame() {
     return (messageEl.innerText = message[2]);
   }
 }
+
+function newCard() {
+  secondCard += 1;
+  cardsEl.textContent = `Cards: ${firstCard} ${secondCard}`;
+}
