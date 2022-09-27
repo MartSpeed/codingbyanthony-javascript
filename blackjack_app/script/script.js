@@ -3,8 +3,8 @@ let jsTestEl = (document.querySelector('#js-test-el').innerText =
   'javascript is running');
 
 // variable selector
-let firstCard = 11;
-let secondCard = 7;
+let firstCard = getRandomCard();
+let secondCard = getRandomCard();
 let sum = firstCard + secondCard;
 let hasBlackJack = false;
 let isAlive = true;
@@ -23,6 +23,7 @@ const message = [
 // card array
 let cards = [firstCard, secondCard];
 
+// blackjack functions and logic
 function startGame() {
   renderGame();
 }
@@ -45,11 +46,14 @@ function renderGame() {
   }
 }
 
+function getRandomCard() {
+  return 5;
+}
+
 function newCard() {
-  let card = 2;
-  secondCard += 1;
-  sum = firstCard + secondCard;
-  cardsEl.textContent = `Cards: ${cards[0]} ${cards[1]}`;
+  let card = getRandomCard();
+  sum += card;
+  cardsEl.textContent = `Cards: ${firstCard} ${secondCard}`;
   cards.push(card);
   renderGame();
 }
