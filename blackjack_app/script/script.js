@@ -3,11 +3,9 @@ let jsTestEl = (document.querySelector('#js-test-el').innerText =
   'javascript is running');
 
 // variable selector
-let firstCard = getRandomCard();
-let secondCard = getRandomCard();
-let sum = firstCard + secondCard;
+let sum = 0;
 let hasBlackJack = false;
-let isAlive = true;
+let isAlive = false;
 
 // query selector
 let cardsEl = document.querySelector('#cards-el');
@@ -21,10 +19,15 @@ const message = [
   "You've busted, would you like to play again?",
 ];
 // card array
-let cards = [firstCard, secondCard];
+let cards = [];
 
 // blackjack functions and logic
 function startGame() {
+  isAlive = true;
+  let firstCard = getRandomCard();
+  let secondCard = getRandomCard();
+  cards = [firstCard, secondCard];
+  sum = firstCard + secondCard;
   renderGame();
 }
 function renderGame() {
