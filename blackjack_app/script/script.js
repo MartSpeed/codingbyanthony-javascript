@@ -11,6 +11,10 @@ let isAlive = false;
 let cardsEl = document.querySelector('#cards-el');
 let sumEl = document.querySelector('#sum-el');
 let messageEl = document.querySelector('#message-el');
+let playerEl = document.querySelector('#player-el');
+let chipsEl = document.querySelector('#chips-el');
+let chips = (chipsEl.textContent = '145');
+playerEl.textContent = 'Anthony: $' + chips;
 
 // message array
 const message = [
