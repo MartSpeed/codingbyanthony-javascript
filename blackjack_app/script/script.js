@@ -49,9 +49,9 @@ function renderGame() {
 function getRandomCard() {
   let card = Math.floor(Math.random() * 13) + 1;
   if (card === 1) {
-    card = 11;
-  } else if (card > 13 || card > 12 || card > 11) {
-    card = 10;
+    return 11;
+  } else if (card > 10) {
+    return 10;
   }
   return card;
 }
