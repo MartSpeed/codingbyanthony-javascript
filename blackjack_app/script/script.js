@@ -60,9 +60,10 @@ function getRandomCard() {
 }
 
 function newCard() {
-  let card = getRandomCard();
-  sum += card;
-  cardsEl.textContent = `Cards: ${firstCard} ${secondCard}`;
-  cards.push(card);
-  renderGame();
+  if (isAlive === true && hasBlackJack === false) {
+    let card = getRandomCard();
+    sum += card;
+    cards.push(card);
+    renderGame();
+  }
 }
