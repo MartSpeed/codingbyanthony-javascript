@@ -13,8 +13,15 @@ let sumEl = document.querySelector('#sum-el');
 let messageEl = document.querySelector('#message-el');
 let playerEl = document.querySelector('#player-el');
 let chipsEl = document.querySelector('#chips-el');
-let chips = (chipsEl.textContent = '145');
-playerEl.textContent = 'Anthony: $' + chips;
+
+// player object
+let player = {
+  name: 'Anthony',
+  chips: '145',
+};
+
+let chips = (chipsEl.textContent = player.chips);
+playerEl.textContent = player.name + ': $' + chips;
 
 // message array
 const message = [
