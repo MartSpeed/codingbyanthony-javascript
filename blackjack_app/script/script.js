@@ -47,7 +47,13 @@ function renderGame() {
 }
 
 function getRandomCard() {
-  return Math.floor(Math.random() * 11);
+  let card = Math.floor(Math.random() * 13) + 1;
+  if (card === 1) {
+    card = 11;
+  } else if (card > 13 || card > 12 || card > 11) {
+    card = 10;
+  }
+  return card;
 }
 
 function newCard() {
