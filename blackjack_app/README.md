@@ -11,7 +11,7 @@
 
 # additions to complete game
 
-1. add a start new game button after you have won or lost so you dont need to refresh the page
-2. add a name element that takes an input when starting to play the game
-3. create a money counter to add or subtract money that also ties into the rendergame()
-4. create a win and lose function to pay out the money for the player
+1. [] add a start new game button after you have won or lost so you dont need to refresh the page
+2. [] add a name element that takes an input when starting to play the game
+3. [] create a money counter to add or subtract money that also ties into the rendergame()
+4. [] create a win and lose function to pay out the money for the player
