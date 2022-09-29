@@ -1,6 +1,9 @@
-// js test line
-let jsTestEl = (document.querySelector('#js-test-el').innerText =
-  'javascript is running');
+/* 
+   add a start new game button after you have won or lost so you dont need to refresh the page
+   add a name element that takes an input when starting to play the game
+   create a money counter to add or subtract money that also ties into the rendergame()
+   create a win and lose function to pay out the money for the player
+*/
 
 // variable selector
 let sum = 0;
@@ -15,11 +18,10 @@ let playerEl = document.querySelector('#player-el');
 
 // player object
 let player = {
-  name: 'Anthony',
+  name: 'Kevin',
   chips: 200,
 };
 
-// let chips = (chipsEl.textContent = player.chips);
 playerEl.textContent = player.name + ': $' + player.chips;
 
 // message array
