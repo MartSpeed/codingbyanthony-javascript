@@ -1,10 +1,3 @@
-/* 
-   add a start new game button after you have won or lost so you dont need to refresh the page
-   add a name element that takes an input when starting to play the game
-   create a money counter to add or subtract money that also ties into the rendergame()
-   create a win and lose function to pay out the money for the player
-*/
-
 // variable selector
 let sum = 0;
 let hasBlackJack = false;
@@ -30,6 +23,7 @@ const message = [
   "You've got Blackjack!",
   "You've busted, would you like to play again?",
 ];
+
 // card array
 let cards = [];
 
@@ -46,6 +40,9 @@ function renderGame() {
   cardsEl.textContent = `Cards: `;
   sumEl.textContent = `Sum: ${sum}`;
 
+  // NOTE: create a for loop with a conditional for the messages and cards display
+  // NOTE: create a condition for losing money when ypu have lost
+  // NOTE: create a condition for gaining money when you have won
   for (let i = 0; i < cards.length; ++i) {
     cardsEl.textContent += cards[i] + ' ';
   }
@@ -79,3 +76,6 @@ function newCard() {
     renderGame();
   }
 }
+
+// NOTE: create a new function to reset the game after winning
+// NOTE: create a win/lose condition using the isAlive boolean
