@@ -12,16 +12,15 @@ let cardsEl = document.querySelector('#cards-el');
 let sumEl = document.querySelector('#sum-el');
 let messageEl = document.querySelector('#message-el');
 let playerEl = document.querySelector('#player-el');
-let chipsEl = document.querySelector('#chips-el');
 
 // player object
 let player = {
   name: 'Anthony',
-  chips: '145',
+  chips: 200,
 };
 
-let chips = (chipsEl.textContent = player.chips);
-playerEl.textContent = player.name + ': $' + chips;
+// let chips = (chipsEl.textContent = player.chips);
+playerEl.textContent = player.name + ': $' + player.chips;
 
 // message array
 const message = [

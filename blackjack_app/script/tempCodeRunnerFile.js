@@ -1,8 +1,10 @@
-message = [
-  'Do you want to draw a new card?',
-  "You've got Blackjack!",
-  "You've busted, would you like to play again?",
-];
-for (let i = 0; i < message.length; ++i) {
-  console.log(message[i]);
-}
+let castle = {
+  location: 'Alabama',
+  availability: true,
+  title: "Albedo's Grand Cathedral",
+  price: '200 / night',
+  reviews: ['good', 'bad'],
+  favorite: true,
+};
+
+console.log(castle.availability, castle.price);
