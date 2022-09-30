@@ -2,3 +2,4 @@
 
 1. - [x] add button and input tag
 2. - [x] style the button and input tag
+3. - [] make the input button work with onclick
