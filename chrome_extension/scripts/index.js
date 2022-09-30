@@ -4,6 +4,7 @@ testEl.textContent = 'JS is running';
 const logEl = document.querySelector('#log-el');
 const resultEl = document.querySelector('#result-el');
 const inputEl = document.querySelector('#input-el');
+const ulEl = document.querySelector('#ul-el');
 
 let myLeads = [];
 
@@ -11,10 +12,10 @@ let myLeads = [];
 const inputBtn = document.querySelector('#input-btn');
 inputBtn.addEventListener('click', function () {
   myLeads.push(inputEl.value);
-  resultEl.textContent += inputEl.value;
+  ulEl.textContent += `${inputEl.value} `;
+
   // forloop for the leads
   for (let i = 0; i < myLeads.length; ++i) {
-    logEl.textContent += 'this is the for loop: ' + inputEl.value;
-    logEl.textContent += myLeads[i];
+    ulEl.textContent += myLeads[i];
   }
 });

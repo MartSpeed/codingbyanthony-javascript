@@ -7,4 +7,5 @@
 5. - [x] create the myLeads array and inputEl
 6. - [x] push to the myLeads array
 7. - [x] push the value from the input field
-8. - [] use a for loop to log out leads
+8. - [x] use a for loop to log out leads with an unordered list
+9. - [] render li u elements to sinister
