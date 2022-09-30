@@ -43,6 +43,9 @@ button {
   font-weight: bold;
   font-size: 1rem;
 }
+ul {
+  text-align: left;
+}
 .test-el {
   display: flex;
   flex-direction: column;
