@@ -5,4 +5,5 @@
 3. - [x] make the input button work with onclick
 4. - [x] refactor to the addEventListener
 5. - [x] create the myLeads array and inputEl
-6. - [] push to the myLeads array
+6. - [x] push to the myLeads array
+7. - [] push the value from the input field
