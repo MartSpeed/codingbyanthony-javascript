@@ -20,7 +20,14 @@ inputBtn.addEventListener('click', function () {
 
   // forloop for the leads
   for (let i = 0; i < myLeads.length; ++i) {
-    testUlEl.innerHTML += `<li>${myLeads[i]}</li>`;
+    //testUlEl.innerHTML += `<li>${myLeads[i]}</li>`;
+
+    // create the element
+    const liEl = document.createElement('li');
+    // set text content
+    liEl.textContent = myLeads[i];
+    // append to the ul element
+    testUlEl.append(liEl);
   }
 });
 
