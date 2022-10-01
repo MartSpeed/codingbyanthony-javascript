@@ -24,19 +24,14 @@ let myLeads = [];
 const inputBtn = document.querySelector('#input-btn');
 inputBtn.addEventListener('click', function () {
   myLeads.push(inputEl.value);
-  listItems += myLeads;
 
   // forloop for the leads
   for (let i = 0; i < myLeads.length; ++i) {
     // standard UI
-    // create element
-    // set text content
-    // append to the listItem
-    listItems += `<li>${myLeads[i]}</li>`;
-    ulEl.innerHTML = listItems;
+    ulEl.innerHTML = ` this is the UL innerHTML <li>${myLeads}</li> `;
 
     // test UI
-    testUlEl.innerHTML += `<li>${myLeads[i]}</li>`;
+    testUlEl.innerHTML += ` this is the test UL <li>${myLeads[i]}</li> `;
   }
 });
 
