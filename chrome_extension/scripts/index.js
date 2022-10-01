@@ -5,6 +5,8 @@ testEl.textContent = 'JS is running';
 const resultEl = document.querySelector('#result-el');
 const inputEl = document.querySelector('#input-el');
 const ulEl = document.querySelector('#ul-el');
+
+// lisItems inner HTML document injections
 let listItems = '';
 
 // test scripts
