@@ -23,7 +23,11 @@ let myLeads = [];
 const inputBtn = document.querySelector('#input-btn');
 inputBtn.addEventListener('click', function () {
   myLeads.push(inputEl.value);
+  renderLeads();
+});
 
+// renderLeads()
+function renderLeads() {
   // lisItems inner HTML document injections
   let listItems = '';
 
@@ -37,7 +41,7 @@ inputBtn.addEventListener('click', function () {
   ulEl.innerHTML = ` ulEl.innerHTML calling listItems variable ${listItems} `;
   // TEST UI output
   testUlEl.innerHTML = ` testUlEl.innerHTML listItems variable ${listItems} `;
-});
+}
 
 // TESTING
 
