@@ -43,17 +43,6 @@ function renderLeads() {
   testUlEl.innerHTML = ` testUlEl.innerHTML listItems variable ${listItems} `;
 }
 
-// TESTING
-
 // METHODS
-/*  
-  you can use the below to retrieve the same result, practice this method
-  so that you understand. these are calls may be better for CRUD calls
-  instead of basic HTML insertion
-*/
-// create the element
-// const liEl = document.createElement('li');
-// set text content
-// liEl.textContent = myLeads[i];
-// append to the ul element
-// testUlEl.append(liEl);
+
+// TESTING
