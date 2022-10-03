@@ -12,13 +12,6 @@ const testUlEl = document.querySelector('#test-ul');
 
 let myLeads = [];
 
-/*
-  1. create the variable listItems, to hold all the HTML for the list items
-    and assign it to an empty string
-  2. add the item to the listItems variable instead of the ulEl.innerHTML
-  3. render the list items inside the ordered list user ulEl.innerHTML
-*/
-
 //log out "button clicked" when the user clicks the save input
 const inputBtn = document.querySelector('#input-btn');
 inputBtn.addEventListener('click', function () {
@@ -26,7 +19,6 @@ inputBtn.addEventListener('click', function () {
   renderLeads();
 });
 
-// renderLeads()
 function renderLeads() {
   // lisItems inner HTML document injections
   let listItems = '';
