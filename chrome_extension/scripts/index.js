@@ -6,9 +6,6 @@ const resultEl = document.querySelector('#result-el');
 const inputEl = document.querySelector('#input-el');
 const ulEl = document.querySelector('#ul-el');
 
-// lisItems inner HTML document injections
-let listItems = '';
-
 // test scripts
 const logEl = document.querySelector('#log-el');
 const testUlEl = document.querySelector('#test-ul');
@@ -27,14 +24,19 @@ const inputBtn = document.querySelector('#input-btn');
 inputBtn.addEventListener('click', function () {
   myLeads.push(inputEl.value);
 
+  // lisItems inner HTML document injections
+  let listItems = '';
+
   // forloop for the leads
   for (let i = 0; i < myLeads.length; ++i) {
-    // standard UI
-    ulEl.innerHTML = ` this is the UL innerHTML <li>${myLeads}</li> `;
-
-    // test UI
-    testUlEl.innerHTML += ` this is the test UL <li>${myLeads[i]}</li> `;
+    // standard UI values
+    listItems += ` <li> listItems variable:  ${myLeads[i]}</li> `;
   }
+
+  // standard UI output
+  ulEl.innerHTML = ` ulEl.innerHTML calling listItems variable ${listItems} `;
+  // TEST UI output
+  testUlEl.innerHTML = ` testUlEl.innerHTML listItems variable ${listItems} `;
 });
 
 // TESTING
