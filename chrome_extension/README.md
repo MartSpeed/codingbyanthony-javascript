@@ -11,4 +11,5 @@
 9. - [x] render li u elements to html page
 10. - [x] use createElement() and append() instead of innerHTML
 11. - [x] create the render function
-12. - [] clearing the input field
+12. - [x] clearing the input field
+13. - [] add the anchor tag
