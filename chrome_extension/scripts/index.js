@@ -17,6 +17,7 @@ const inputBtn = document.querySelector('#input-btn');
 inputBtn.addEventListener('click', function () {
   myLeads.push(inputEl.value);
   renderLeads();
+  clearInputField();
 });
 
 function renderLeads() {
@@ -30,9 +31,13 @@ function renderLeads() {
   }
 
   // standard UI output
-  ulEl.innerHTML = ` ulEl.innerHTML calling listItems variable ${listItems} `;
+  ulEl.innerHTML = ` standard UI output listItems variable: ${listItems} `;
   // TEST UI output
-  testUlEl.innerHTML = ` testUlEl.innerHTML listItems variable ${listItems} `;
+  testUlEl.innerHTML = ` test UI output listItems variable: ${listItems} `;
+}
+
+function clearInputField() {
+  inputEl.value = '';
 }
 
 // METHODS
