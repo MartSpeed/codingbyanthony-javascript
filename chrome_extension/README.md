@@ -12,4 +12,5 @@
 10. - [x] use createElement() and append() instead of innerHTML
 11. - [x] create the render function
 12. - [x] clearing the input field
-13. - [] add the anchor tag
+13. - [x] add the anchor tag
+14. - []

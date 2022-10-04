@@ -46,6 +46,13 @@ button {
 ul {
   text-align: left;
 }
+li {
+  list-style: none;
+  margin-top: 5px;
+}
+li a {
+  color: #5f9341;
+}
 .test-el {
   display: flex;
   flex-direction: column;

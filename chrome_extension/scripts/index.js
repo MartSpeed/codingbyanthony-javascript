@@ -27,7 +27,13 @@ function renderLeads() {
   // forloop for the leads
   for (let i = 0; i < myLeads.length; ++i) {
     // standard UI values
-    listItems += ` <li> listItems variable: <a href="${myLeads[i]}" target="_blank">${myLeads}</a> </li> `;
+    listItems += ` 
+    <li> 
+      listItems variable:\n 
+        <a href="${myLeads[i]}" target="_blank">
+          ${myLeads[i]}
+        </a> 
+    </li> `;
   }
 
   // standard UI output
